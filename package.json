@@ -20,7 +20,12 @@
     },
     "dependencies": {
         "@flaticon/flaticon-uicons": "^3.0.0",
+        "audit": "^0.0.6",
+        "fix": "^0.0.3",
+        "flatpickr": "^4.6.13",
         "flowbite": "^2.2.0",
-        "flowbite-datepicker": "^1.2.5"
+        "flowbite-datepicker": "^1.2.5",
+        "leaflet": "^1.9.4",
+        "tw-elements": "^1.1.0"
     }
 }

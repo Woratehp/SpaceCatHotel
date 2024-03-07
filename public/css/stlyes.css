@@ -1,3 +1,98 @@
+
 .modal {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* START IMAGE MOVING */
+.image-moving {
+    opacity: 1;
+    animation: ImageMoving 50s linear infinite;
+  }
+  
+  @keyframes ImageMoving {
+    0% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-40%);
+    }
+  }
+
+  /* สำหรับให้คำสั่งเลื่อนตามลงมาเวลาสกอเม้าส์ */
+#fixedNavbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#fixedNavbar.fixed {
+    transform: translateY(0);
+}
+
+#fixedNavbar.translate-y-full {
+    transform: translateY(-60%);
+}
+
+#fixedNavbar1 {
+  position: sticky;
+  top: 30;
+  z-index: 100;
+}
+
+#fixedNavbar1.fixed {
+  transform: translateY(0);
+}
+
+#fixedNavbar1.translate-y-full {
+  transform: translateY(-60%);
+}
+
+/* .slide {
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out;
+}
+.slide.active {
+  opacity: 1;
+} */
+@keyframes slideUp {
+  from {
+      transform: translateY(100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+
+.slide {
+  transform: translateX(100%);
+  transition: transform 1s ease-in-out;
+}
+.slide.active {
+  transform: translateX(0);
+}
+
+.slideText {
+  transform: translateY(100%);
+  animation: slideUp 3s forwards;
+}
+
+/* สำหรับตัวอย่างรูป */
+.slide-animation {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  transform: translateY(50px); /* เลือกขนาดเพื่อให้ข้อความเลื่อนขึ้นมา */
+}
+
+.slide-show {
+  opacity: 3;
+  transform: translateY(0); /* ข้อความเคลื่อนไหวขึ้นมายังตำแหน่งเดิม */
+}
+
+.slide-animation1 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  transform: translateY(50px); /* เลือกขนาดเพื่อให้ข้อความเลื่อนขึ้นมา */
 }
